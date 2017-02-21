@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iP6P-BSS-By-JasonZigrino1" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-Lk-fu7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDj-bQ-71K">
+                                <rect key="frame" x="83" y="84" width="209" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="8UO-H0-luZ"/>
+                                    <constraint firstAttribute="height" constant="129" id="qcO-Nq-gbd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-BookIta" family="Bodoni 72" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-Ck-rqp">
+                                <rect key="frame" x="131" y="463" width="113" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW9-PD-diD">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="113" id="pAD-mR-em3"/>
+                                            <constraint firstAttribute="height" constant="42" id="sPJ-Ib-x9J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uz-kA-9Pe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obt-KN-y6k">
+                                        <rect key="frame" x="0.0" y="42" width="113" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Ndt-Rd-AXg"/>
+                                            <constraint firstAttribute="height" constant="42" id="VET-Kq-kbd"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="aVe-oZ-KDN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                        <state key="normal" title="PAUSE">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sln-dV-7pp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvi-rR-dMB">
+                                        <rect key="frame" x="0.0" y="84" width="113" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="Uzy-Ve-aEC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="xH1-YL-KfX"/>
+                                            <constraint firstAttribute="width" constant="113" id="xHL-VX-yWV"/>
+                                            <constraint firstAttribute="height" constant="42" id="xsJ-6v-2vU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNU-R2-LBC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="Ve9-dB-ZMF"/>
+                                    <constraint firstAttribute="width" constant="113" id="aYZ-Do-Yh3"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop watch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rf-jH-98f">
+                                <rect key="frame" x="51" y="0.0" width="273" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="Tjv-5v-fnf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YWD-Ck-rqp" secondAttribute="bottom" constant="78" id="00y-EQ-SIE"/>
+                            <constraint firstItem="FDj-bQ-71K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="57B-nY-Q26"/>
+                            <constraint firstItem="FDj-bQ-71K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="713-By-8ES"/>
+                            <constraint firstItem="AAq-Lk-fu7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Cn-GD-0uP"/>
+                            <constraint firstItem="3rf-jH-98f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="TB8-TP-56d"/>
+                            <constraint firstItem="YWD-Ck-rqp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tka-mL-ghq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AAq-Lk-fu7" secondAttribute="bottom" id="VHC-Zh-23I"/>
+                            <constraint firstItem="3rf-jH-98f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcl-7W-hJx"/>
+                            <constraint firstAttribute="trailing" secondItem="3rf-jH-98f" secondAttribute="trailing" constant="51" id="rfT-YM-KMb"/>
+                            <constraint firstAttribute="trailing" secondItem="AAq-Lk-fu7" secondAttribute="trailing" id="sru-XI-fkq"/>
+                            <constraint firstItem="3rf-jH-98f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t0V-I8-6Zq"/>
+                            <constraint firstItem="AAq-Lk-fu7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="yjl-NL-pxk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timelabel" destination="FDj-bQ-71K" id="u3u-4b-Q9P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iP6P-BSS-By-JasonZigrino1" width="1412" height="2662"/>
+    </resources>
+</document>
